@@ -19,13 +19,22 @@ body {
     "rodape rodape rodape rodape";
     column-gap: 50px;
     row-gap: 40px;
-    grid-template-columns: 0 60% auto 0;
+    /* Conferir depois se este template é o melhor para este caso */
+    grid-template-columns: auto;
     grid-template-rows: 4.4rem 1fr 4.4rem;
 }
+
+
+
+
+
+
+
 .header {
     grid-area: cabeca;
     display: grid;
     align-items: center;
+    justify-items: center;
     background-color: white;
     grid-template-areas: ". logo . botoes .";
     grid-template-columns: 50px min-content auto max-content 50px;
@@ -45,13 +54,67 @@ body {
     text-decoration: none;
     margin: 1rem;
 }
+
+
+
+
+
+
 .container-posts {
     grid-area: post;
+    max-width: min-content;
     margin-left: 4rem;
 }
 .posts {
+    display: flex;
+    flex-direction: column;
+    max-width: 696px;
+    background-color: white;
     
 }
+.posts>img {
+    width: 696px;
+}
+
+.posts>h1{
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.posts>span {
+    font-size: 12px;
+    color: #929292;
+    padding: 1rem;
+}
+.posts p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #545454;
+    margin: 1rem;
+}
+.botao-post {
+    width: max-content;
+    border: 1px solid #FE0078;
+    box-sizing: border-box;
+    border-radius: 20px;
+    align-self: flex-end;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+.botao-post a {
+    color: #545454;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+
+
+
+
 .menu {
     grid-area: menu;
     margin-right: 4rem;
