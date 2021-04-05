@@ -24,6 +24,7 @@ body {
 .header {
     grid-area: cabeca;
     display: grid;
+    
 }
 
 .post {
