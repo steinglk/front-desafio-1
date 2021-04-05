@@ -6,6 +6,7 @@
 }
 body {
     height: 100vh;
+    background-color: #E5E5E5;
 }
 
 .grid {
@@ -24,9 +25,24 @@ body {
 .header {
     grid-area: cabeca;
     display: grid;
-    
+    align-items: center;
+    background-color: white;
+    grid-template-areas: ". logo . botoes .";
+    grid-template-columns: 50px min-content auto max-content 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
 }
-
+.header>img {
+    grid-area: logo;
+}
+.header>div {
+    grid-area: botoes;
+    width: max-content;
+}
+.botoes>a {
+    color: #545454;
+    text-decoration: none;
+    margin: 1rem;
+}
 .post {
     grid-area: post;
 }
@@ -37,6 +53,6 @@ body {
     grid-area: rodape;
 }
 .item {
-    background-color: blue;
+    background-color: pink;
     border: 2px solid red;
 }
