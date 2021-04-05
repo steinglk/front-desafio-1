@@ -19,7 +19,7 @@ body {
     "rodape rodape rodape rodape";
     column-gap: 50px;
     row-gap: 40px;
-    grid-template-columns: 50px 60% auto 50px;
+    grid-template-columns: 0 60% auto 0;
     grid-template-rows: 4.4rem 1fr 4.4rem;
 }
 .header {
@@ -33,10 +33,12 @@ body {
 }
 .header>img {
     grid-area: logo;
+    margin-left: 4rem;
 }
 .header>div {
     grid-area: botoes;
     width: max-content;
+    margin-right: 4rem;
 }
 .botoes>a {
     color: #545454;
@@ -45,9 +47,11 @@ body {
 }
 .post {
     grid-area: post;
+    margin-left: 4rem;
 }
 .menu {
     grid-area: menu;
+    margin-right: 4rem;
 }
 .footer {
     grid-area: rodape;
