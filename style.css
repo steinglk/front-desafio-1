@@ -62,7 +62,11 @@ body {
 
 .container-posts {
     grid-area: post;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
     max-width: min-content;
+    max-height: min-content;
     margin-left: 4rem;
 }
 .cards {
@@ -122,6 +126,12 @@ body {
 }
 .footer {
     grid-area: rodape;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    background: #222222;
 }
 .item {
     background-color: pink;
