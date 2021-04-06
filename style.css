@@ -122,8 +122,15 @@ body {
 
 .menu {
     grid-area: menu;
+    width: 380px;
     margin-right: 4rem;
 }
+
+
+
+
+
+
 .footer {
     grid-area: rodape;
     display: flex;
