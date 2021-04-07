@@ -99,6 +99,12 @@ body {
     color: #545454;
     margin: 1rem;
 }
+.cards ul {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 1rem  3rem;
+}
 .botao-post {
     width: max-content;
     border: 1px solid #FE0078;
@@ -120,8 +126,6 @@ body {
     text-decoration: none;
     padding: 1rem;
 }
-
-
 
 
 
@@ -191,4 +195,47 @@ body {
     font-size: 14px;
     color: white;
     background: #222222;
+}
+
+
+/* Estilos da segunda página */
+
+.post {
+    display: flex;
+    flex-direction: column;
+    max-width: 696px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.post>img {
+    width: 696px;
+}
+
+.post>h1{
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.post>span {
+    font-size: 12px;
+    color: black;
+    padding: 1rem;
+}
+.post p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: black;
+    margin: 1rem;
+}
+.post ul {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 1rem  3rem;
+}
+.italico {
+    font-style: italic;
 }
