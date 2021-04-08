@@ -6,7 +6,7 @@
 }
 body {
     height: 100vh;
-    background-color: #E5E5E5;
+    background-color: #F5F5F5;;
 }
 
 .grid {
@@ -23,7 +23,21 @@ body {
     grid-template-columns: auto;
     grid-template-rows: 4.4rem 1fr 4.4rem;
 }
-
+.grid-post {
+    display: grid;
+    min-height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    "cabeca cabeca cabeca cabeca"
+    ". post menu ."
+    ". comentarios menu ."
+    "rodape rodape rodape rodape";
+    column-gap: 50px;
+    row-gap: 40px;
+    /* Conferir depois se este template é o melhor para este caso */
+    grid-template-columns: auto;
+    grid-template-rows: 4.4rem 1fr 4.4rem;
+}
 
 
 
@@ -207,6 +221,7 @@ body {
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    padding: 1rem 0;
 }
 .post>img {
     width: 696px;
@@ -238,4 +253,72 @@ body {
 }
 .italico {
     font-style: italic;
+}
+
+.comentarios {
+    grid-area: comentarios;
+    display: grid;
+    grid-template-areas:
+    "titulo ."
+    "nome email"
+    "texto texto"
+    ". botao";
+
+}
+.comentarios h1 {
+    grid-area: titulo;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;  
+}
+.comentarios input:hover{
+    border-color: #FE0078;    
+}
+
+.nome {
+    grid-area: nome;
+
+}
+.email {
+    grid-area: email;
+}
+.coment {
+    grid-area: texto;
+}
+.entradas {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.entradas>label{
+    font-size: 14px;
+}
+.entradas input {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px; 
+    padding: 1rem;
+}
+
+.coment .entradas input {
+    padding: 5rem 0;
+}
+
+.botao-coment {
+    width: max-content;
+    grid-area: botao;
+    background: #FE0078;
+    border-radius: 20px;
+    
+    padding: 0.5rem;
+    margin: 2rem 0 1rem 10rem;
+}
+
+.botao-coment a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4rem 2rem;
 }
