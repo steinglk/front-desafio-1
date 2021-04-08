@@ -212,6 +212,26 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos da segunda página */
 
 .post {
@@ -310,9 +330,8 @@ body {
     grid-area: botao;
     background: #FE0078;
     border-radius: 20px;
-    
     padding: 0.5rem;
-    margin: 2rem 0 1rem 10rem;
+    margin: 2rem 0 1rem 15rem;
 }
 
 .botao-coment a {
@@ -320,5 +339,5 @@ body {
     color: white;
     font-weight: bold;
     font-size: 14px;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
 }
