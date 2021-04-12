@@ -74,7 +74,7 @@ body {
 
 
 
-.container-posts {
+.container-posts-c {
     grid-area: post;
     display: flex;
     flex-direction: column;
@@ -233,6 +233,14 @@ body {
 
 
 /* Estilos da segunda página */
+.container-post {
+    grid-area: post;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    max-height: min-content;
+    margin-left: 4rem;
+}
 
 .post {
     display: flex;
@@ -340,4 +348,98 @@ body {
     font-weight: bold;
     font-size: 14px;
     padding: 4rem 1rem;
+}
+
+
+
+
+/* Estilos especificos do card Contato */
+
+.container-contato {
+    grid-area: post;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    max-height: min-content;
+    margin-left: 4rem;
+}
+.container-contato h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.container-contato h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 1rem;
+}
+.agrupamento {
+    padding: 1rem 1rem 0 1rem;
+    display: grid;
+    grid-template-areas:
+    "svg titulo ."
+    "dado dado dado";
+    grid-template-rows: auto;
+    justify-content: flex-start;
+}
+
+.agrupamento img{
+    grid-area: svg;
+    max-width: 20px;
+    max-height: 20px;
+}
+.agrupamento h3 {
+    grid-area: titulo;
+    padding-left: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+}
+.agrupamento p {
+    grid-area: dado;
+}
+
+.contato-inputs {
+    display: grid;
+    grid-template-areas:
+    "nome email"
+    "assunto assunto"
+    "comentario comentario"
+    ". enviar-botao";
+}
+
+.nome-input {
+    grid-area: nome;
+}
+
+.email-input {
+    grid-area: email;
+}
+.assunto-input {
+    grid-area: assunto;
+}
+.coment-input {
+    grid-area: comentario;
+}
+.coment-input input {
+    padding: 5rem;
+}
+
+.botao-enviar {
+    width: max-content;
+    grid-area: enviar-botao;
+    background: #FE0078;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 2rem 0 2rem 15rem;
+}
+
+.botao-enviar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4rem 1rem;
+}
+
+.hover-inputs input:hover{
+    border-color: #FE0078;    
 }
